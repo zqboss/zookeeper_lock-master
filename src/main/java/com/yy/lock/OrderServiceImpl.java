@@ -45,6 +45,7 @@ public class OrderServiceImpl implements Runnable {
     }
 
     public static void main(String[] args) {
+        System.out.println("123");
         for (int i=0;i < NUM;i++){
             new Thread(new OrderServiceImpl()).start();
             cdl.countDown();
